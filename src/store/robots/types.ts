@@ -1,5 +1,5 @@
-import { RobotStructure } from "../../types";
+import { RobotsDocumentStructure } from "../../types";
 
 export interface RobotStateStructure {
-  robots: RobotStructure[];
+  robots: RobotsDocumentStructure[];
 }
