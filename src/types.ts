@@ -3,7 +3,7 @@ export interface RobotStructure {
   img: string;
   speed: number;
   resistance: number;
-  creationDate: number;
+  creationDate: string;
 }
 
 export interface RobotsDocumentStructure extends RobotStructure {
