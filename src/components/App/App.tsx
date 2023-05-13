@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import useApi from "../../hooks/useApi";
 import { useAppDispatch } from "../../store";
 import { loadRobotsActionCreator } from "../../store/robots/robotsSlice";
+import AppStyle from "./AppStyle";
 
 const App = (): JSX.Element => {
   const { loadRobots } = useApi();
@@ -16,7 +17,11 @@ const App = (): JSX.Element => {
     })();
   }, [dispatch, loadRobots]);
 
-  return <h1 className="title">¡Your Robots!</h1>;
+  return (
+    <AppStyle className="container">
+      <h1 className="title">¡Your Robots!</h1>
+    </AppStyle>
+  );
 };
 
 export default App;
