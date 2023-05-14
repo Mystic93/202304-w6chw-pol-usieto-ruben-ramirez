@@ -7,7 +7,7 @@ const RobotListStyled = styled.ul`
   column-gap: 50px;
   padding-top: 50px;
 
-  @media (min-width: 550px) {
+  @media (min-width: 645px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;

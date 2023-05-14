@@ -12,7 +12,6 @@ describe("Given loadRobot reducer", () => {
       const loadRobotsAction = loadRobotsActionCreator(robotsMock);
 
       const expectedRobotList: RobotStateStructure = {
-        ...robotsState,
         robots: robotsMock,
       };
 

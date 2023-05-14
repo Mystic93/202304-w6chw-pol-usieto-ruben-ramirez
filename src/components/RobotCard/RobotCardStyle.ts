@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 const RobotCardStyled = styled.article`
-  background-color: orange;
-  color: black;
-  margin: 20px;
+  position: relative;
   padding: 20px;
-  border-radius: 5px;
-  gap: 10px;
+  padding-top: 7px;
+  border-radius: 20px;
+  background-color: #ffa500;
+  color: #000;
+  width: 266px;
 
   .robotcard-header {
     display: flex;
@@ -15,40 +16,36 @@ const RobotCardStyled = styled.article`
     justify-content: space-between;
 
     &__title {
-      font-family: inherit;
-      font-weight: 700;
-      font-size: 13px;
+      margin-block: 6px;
+      width: 100%;
+      font-size: 25px;
+      text-align: center;
     }
   }
 
   .robotcard-info__image {
-    max-width: 100px;
-    height: 300px;
-    margin: 0px;
-    width: 200px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
   }
 
   .robotcard-header__button {
-    border-radius: 50%;
-    color: red;
+    position: absolute;
+    border-radius: 12px;
+    padding: 7px 13px;
+    background-color: rgb(127, 21, 21);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(74, 1, 1);
+    top: 407px;
+    right: 13px;
+    cursor: pointer;
   }
 
   .robotcard-info {
     display: grid;
-  }
-  .robotcard-info__id {
-    margin: 5px;
-  }
-
-  .robotcard-info__creationdate {
-    margin-bottom: 5px;
-  }
-  .robotcard-info__resistance {
-    margin-bottom: 5px;
-  }
-  .robotcard-info__image {
-    align-self: center;
-    height: auto;
+    grid-gap: 10px;
+    font-size: 18px;
   }
 `;
 

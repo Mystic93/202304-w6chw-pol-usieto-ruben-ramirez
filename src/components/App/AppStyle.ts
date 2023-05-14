@@ -9,9 +9,21 @@ const AppStyle = styled.div`
   font-size: 10px;
   margin-top: 20px;
 
-  @media (min-width: 550px) {
+  .title {
+    font-size: 31px;
+  }
+
+  @media (min-width: 645px) {
     font-size: 20px;
     margin-top: 48px;
+
+    .title {
+      font-size: 50px;
+    }
+
+    .fODzDo {
+      width: 239px;
+    }
   }
 `;
 
