@@ -8,7 +8,7 @@ const useApi = () => {
   const loadRobots = useCallback(async (): Promise<
     RobotsDocumentStructure[]
   > => {
-    const { data: robots } = await axios.get(`${apiUrl}/robots`);
+    const { data: robots } = await axios.get(`${apiUrl}robots`);
 
     return robots;
   }, []);
