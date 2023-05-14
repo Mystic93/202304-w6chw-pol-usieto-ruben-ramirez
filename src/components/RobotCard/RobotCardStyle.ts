@@ -21,6 +21,13 @@ const RobotCardStyled = styled.article`
     }
   }
 
+  .robotcard-info__image {
+    max-width: 100px;
+    height: 300px;
+    margin: 0px;
+    width: 200px;
+  }
+
   .robotcard-header__button {
     border-radius: 50%;
     color: red;
