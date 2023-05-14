@@ -19,9 +19,9 @@ const App = (): JSX.Element => {
     })();
   }, [dispatch, loadRobots]);
 
-  const robots = useAppSelector((state): RobotsDocumentStructure[] => {
-    return state.robotsStore.robots;
-  });
+  const robots = useAppSelector(
+    (state): RobotsDocumentStructure[] => state.robotsStore.robots
+  );
 
   return (
     <AppStyle className="container">
