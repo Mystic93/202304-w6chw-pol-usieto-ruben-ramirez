@@ -15,7 +15,7 @@ const App = (): JSX.Element => {
     (async () => {
       const initialRobots = await loadRobots();
 
-      dispatch(loadRobotsActionCreator(initialRobots));
+      dispatch(loadRobotsActionCreator(initialRobots.robots));
     })();
   }, [dispatch, loadRobots]);
 
