@@ -14,7 +14,15 @@ export default defineConfig({
       provider: "c8",
       all: true,
       src: ["src"],
-      exclude: ["**/types.ts", "**/*.d.ts"],
+      exclude: [
+        "src/index.ts",
+        "src/main.tsx",
+        "src/components/App/App.tsx",
+        " **/*.test.{ts,tsx}",
+        "**/types.ts",
+        "**/*.d.ts",
+        "src/main.tsx",
+      ],
     },
   },
 });
