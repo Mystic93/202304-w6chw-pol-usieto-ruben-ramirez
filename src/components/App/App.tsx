@@ -5,6 +5,7 @@ import { loadRobotsActionCreator } from "../../store/robots/robotsSlice";
 import AppStyle from "./AppStyle";
 import RobotList from "../RobotList/RobotList";
 import { RobotsDocumentStructure } from "../../types";
+import LoginForm from "../LoginForm/LoginForm";
 
 const App = (): JSX.Element => {
   const { loadRobots } = useApi();
@@ -26,6 +27,7 @@ const App = (): JSX.Element => {
   return (
     <AppStyle className="container">
       <h1 className="title">¡Your Robots!</h1>
+      <LoginForm />
       <RobotList robots={robots} />
     </AppStyle>
   );
